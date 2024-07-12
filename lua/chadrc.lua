@@ -9,7 +9,7 @@ M.ui = {
       NvDashButtons = { bg = "NONE" },
   },
   changed_themes = {},
-  theme = "nord", -- default theme
+  theme = "catppuccin", -- default theme
   transparency = false,
 
   cmp = {
