@@ -20,18 +20,6 @@ map("n", "<leader>x", function()
   require("nvchad.tabufline").close_buffer()
 end, { desc = "Buffer Close" })
 
--- Comment
-map("n", "<leader>/", function()
-  require("Comment.api").toggle.linewise.current()
-end, { desc = "Comment Toggle comment" })
-
-map(
-  "v",
-  "<leader>/",
-  "<ESC><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>",
-  { desc = "Comment Toggle comment" }
-)
-
 -- NvimTree
 map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", { desc = "NvimTree Toggle window" })
 
@@ -55,7 +43,6 @@ local function close_terminal()
   vim.api.nvim_win_close(win, true)
 end
 
-map("t", "jk", close_terminal, { desc = "Terminal Close terminal" })
 map("t", "<ESC>", close_terminal, { desc = "Terminal Close terminal" })
 map("n", "<leader>h", function()
   require("nvchad.term").new { pos = "sp", size = 0.5 }
@@ -81,7 +68,6 @@ map("n", "<C-d>", "<C-d>zz", { desc = "General Move half page down and center" }
 map("n", "<C-u>", "<C-u>zz", { desc = "General Move half page up and center" })
 map("n", "<C-f>", "<C-f>zz", { desc = "General Move half down and center" })
 map("n", "<C-b>", "<C-b>zz", { desc = "General Move half up and center" })
-map("n", "<leader>s", "<cmd> w <CR>", { desc = "General Save file" })
 map("n", "<leader>v", "<cmd> vsplit <CR>", { desc = "General Vertical split" })
 map("n", "<leader>lu", "<cmd> Lazy update <CR>", { desc = "General Update Lazy plugins" })
 map("n", "<leader>pr", "<cmd> MarkdownPreviewToggle <CR>", { desc = "General Preview Markdown file" })
@@ -96,20 +82,20 @@ map("n", "<leader>fmt", function()
 end, { desc = "General Toggle format on save" })
 
 -- DAP
-map("n", "<leader>db", "<cmd> DapToggleBreakpoint <CR>", { desc = "DAP Add breakpoint at line" })
-map("n", "<leader>dso", "<cmd> DapStepOver <CR>", { desc = "DAP Step over" })
-map("n", "<leader>dsi", "<cmd> DapStepIn <CR>", { desc = "DAP Step in" })
-map("n", "<leader>dc", "<cmd> DapContinue <CR>", { desc = "DAP Continue" })
-map("n", "<leader>dt", "<cmd> DapTerminate <CR>", { desc = "DAP Terminate" })
-map("n", "<leader>dgt", function()
-  require("dap-go").debug_test()
-end, { desc = "DAP Debug Go test" })
-map("n", "<leader>dglt", function()
-  require("dap-go").debug_last_test()
-end, { desc = "DAP Debug last Go test" })
-map("n", "<leader>dpt", function()
-  require("dap-python").test_method()
-end, { desc = "DAP Debug Python test" })
+-- map("n", "<leader>db", "<cmd> DapToggleBreakpoint <CR>", { desc = "DAP Add breakpoint at line" })
+-- map("n", "<leader>dso", "<cmd> DapStepOver <CR>", { desc = "DAP Step over" })
+-- map("n", "<leader>dsi", "<cmd> DapStepIn <CR>", { desc = "DAP Step in" })
+-- map("n", "<leader>dc", "<cmd> DapContinue <CR>", { desc = "DAP Continue" })
+-- map("n", "<leader>dt", "<cmd> DapTerminate <CR>", { desc = "DAP Terminate" })
+-- map("n", "<leader>dgt", function()
+--   require("dap-go").debug_test()
+-- end, { desc = "DAP Debug Go test" })
+-- map("n", "<leader>dglt", function()
+--   require("dap-go").debug_last_test()
+-- end, { desc = "DAP Debug last Go test" })
+-- map("n", "<leader>dpt", function()
+--   require("dap-python").test_method()
+-- end, { desc = "DAP Debug Python test" })
 
 -- Copilot
 map("n", "<leader>cp", function()
@@ -128,4 +114,3 @@ map("n", "<leader>cc", function()
      require("CopilotChat").ask(input, { selection = require("CopilotChat.select").buffer })
   end
 end, { desc = "CopilotChat - Quick Chat" })
-map("n", "<leader>ce", "<cmd>CopilotChatExplain<CR>", { desc = "CopilotChat - Explain" })
