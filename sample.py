@@ -1,7 +1,7 @@
 # sample python program
 
-list = [1, 2, 3, 4, 5]
+list_sample = [1, 2, 3, 4, 5]
 
-for x in list:
+for x in list_sample:
     print(x)
 

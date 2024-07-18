@@ -38,3 +38,7 @@ vim.schedule(function()
   require "mappings"
   require "unmappings"
 end)
+
+-- switch case
+require'switch_case'
+vim.api.nvim_set_keymap('n', '<Leader>s', '<cmd>lua require("switch_case").switch_case()<CR>', {noremap = true, silent = true})
