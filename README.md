@@ -1,3 +1,5 @@
+### Started with NVChad and configured from there.
+
 Plugins
 1. Find files (Space + f + f)
 2. Global find phrase (Space + f + w)
