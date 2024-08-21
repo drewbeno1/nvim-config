@@ -8,6 +8,7 @@ opt.colorcolumn = "120"
 opt.relativenumber = true
 opt.list = true
 opt.listchars = "tab:➝ ,lead:·,space:·,trail:·,nbsp:+,eol:¬"
+opt.scrolloff = 10
 
 -- feature toggles
 vim.g.format_on_save = false

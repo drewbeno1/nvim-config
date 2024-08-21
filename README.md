@@ -16,3 +16,9 @@ Language Supports
 5. html/css
 6. Docker
 7. lua
+
+
+*vue-language-server bug fix*
+1. cd /Users/{user}/.local/share/nvim/mason/packages/vue-language-server/node_modules/@vue/language-server/lib/
+2. nvim initialize.js
+3. comment out the fileWatcher logic on line 46
