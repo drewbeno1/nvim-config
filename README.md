@@ -18,7 +18,7 @@ Language Supports
 7. lua
 
 
-*vue-language-server bug fix*
-1. cd /Users/{user}/.local/share/nvim/mason/packages/vue-language-server/node_modules/@vue/language-server/lib/
-2. nvim initialize.js
-3. comment out the fileWatcher logic on line 46
+*vue-language-server dependency bug fix*
+1. cd /Users/{user}/.local/share/nvim/mason/packages/vue-language-server/node_modules/@vue/language-server/
+2. npm install @volar/language-core@2.4.0-alpha.20
+3. npm install @volar/language-server@2.4.0-alpha.20
