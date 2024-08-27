@@ -9,23 +9,23 @@ M.ui = {
       NvDashButtons = { bg = "NONE" },
   },
   changed_themes = {},
-  theme = "catppuccin", -- default theme
+  theme = "catppuccin",
   transparency = false,
 
   cmp = {
     icons = true,
     lspkind_text = true,
-    style = "default", -- default/flat_light/flat_dark/atom/atom_colored
+    style = "atom_colored", -- default/flat_light/flat_dark/atom/atom_colored
   },
 
   telescope = { style = "bordered" }, -- borderless / bordered
 
   ------------------------------- nvchad_ui modules -----------------------------
   statusline = {
-    theme = "default", -- default/vscode/vscode_colored/minimal
+    theme = "minimal", -- default/vscode/vscode_colored/minimal
     -- default/round/block/arrow separators work only for default statusline theme
     -- round and block will work for minimal theme only
-    separator_style = "default",
+    separator_style = "round",
     order = nil,
     modules = nil,
   },
