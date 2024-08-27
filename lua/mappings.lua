@@ -103,11 +103,18 @@ map("n", "<leader>cp", function()
     vim.cmd "Copilot disable"
     print "Copilot disabled"
   else
+    if not vim.g.copilot_initialized then
+      require("copilot").setup()
+      require("copilot_cmp").setup()
+      require("CopilotChat").setup()
+      vim.g.copilot_initialized = true
+    end
     vim.cmd "Copilot enable"
     print "Copilot enabled"
   end
   vim.g.copilot_enabled = not vim.g.copilot_enabled
 end, { desc = "General Toggle Copilot" })
+
 map("n", "<leader>cc", function()
   local input = vim.fn.input("Quick chat: ")
   if input ~= "" then
