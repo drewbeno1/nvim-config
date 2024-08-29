@@ -18,9 +18,3 @@ Language Supports
 6. Docker
 7. lua
 8. yaml
-
-
-*vue-language-server dependency bug fix*
-1. cd /Users/{user}/.local/share/nvim/mason/packages/vue-language-server/node_modules/@vue/language-server/
-2. npm install @volar/language-core@2.4.0-alpha.20
-3. npm install @volar/language-server@2.4.0-alpha.20
