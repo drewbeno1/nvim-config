@@ -30,6 +30,7 @@ map("n", "<leader>cm", "<cmd>Telescope git_commits<CR>", { desc = "Telescope Git
 map("n", "<leader>gt", "<cmd>Telescope git_status<CR>", { desc = "Telescope Git status" })
 map("n", "<leader>pt", "<cmd>Telescope terms<CR>", { desc = "Telescope Pick hidden term" })
 map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Telescope Find files" })
+map("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Telescope Find recent files" })
 map(
   "n",
   "<leader>fa",

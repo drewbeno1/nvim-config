@@ -71,16 +71,16 @@ M.ui = {
 
     buttons = {
       { "  Find File", "Spc f f", "Telescope find_files" },
-      { "󰈚  Recent Files", "Spc f o", "Telescope oldfiles" },
+      { "󰈚  Recent Files", "Spc f r", "Telescope oldfiles" },
       { "󰈭  Find Word", "Spc f w", "Telescope live_grep" },
-      { "↟  File Tree", "Ctrl n", "Ctrl-n" },
+      { "↟  File Tree", "Ctrl n", "NvimTreeToggle" },
       { "  Themes", "Spc t h", "Telescope themes" },
       { "  Mappings", "Spc c h", "NvCheatsheet" },
     },
   },
 
   cheatsheet = {
-    theme = "grid", -- simple/grid
+    theme = "simple", -- simple/grid
     excluded_groups = { "terminal (t)", "autopairs", "Nvim", "Opens" }, -- can add group name or with mode
   },
 
