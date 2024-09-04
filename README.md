@@ -18,3 +18,7 @@ Language Supports
 6. Docker
 7. lua
 8. yaml
+
+Dependencies
+1. nvim 
+2. ripgrep
