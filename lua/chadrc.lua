@@ -22,10 +22,10 @@ M.ui = {
 
   ------------------------------- nvchad_ui modules -----------------------------
   statusline = {
-    theme = "minimal", -- default/minimal
+    theme = "default", -- default/minimal
     -- default/round/block/arrow separators work only for default statusline theme
     -- round and block will work for minimal theme only
-    separator_style = "round",
+    separator_style = "arrow",
     order = nil,
     modules = nil,
   },
