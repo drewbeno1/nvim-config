@@ -46,3 +46,12 @@ vim.api.nvim_set_keymap('n', '<Leader>s', '<cmd>lua require("switch_case").switc
 
 -- hello 
 require "hello"
+
+-- nvim-tree custom setup 
+require('nvim-tree').setup({
+   actions = {
+       open_file = {
+           quit_on_open = true
+       }
+   }
+})
