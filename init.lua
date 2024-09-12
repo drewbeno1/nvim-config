@@ -46,3 +46,6 @@ vim.api.nvim_set_keymap('n', '<Leader>s', '<cmd>lua require("switch_case").switc
 
 -- hello 
 require "hello"
+
+-- give some more time after pressing leader
+vim.o.timeoutlen = 5000
